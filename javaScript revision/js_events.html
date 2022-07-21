@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_event and eventlistener</title>
+    <style>
+        #btn{
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Lorem ipsum dolor sit amet.
+        </h1>
+        <p id='para'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fuga ab quos pariatur perferendis fugit, ea recusandae temporibus natus alias, labore tempora minus dolor? Dolorum quia nam, esse velit quasi neque repellat consectetur perspiciatis corporis dolore eaque ipsum officia aut necessitatibus eum veritatis nulla? Consequuntur numquam corporis a perspiciatis accusantium quis error, itaque voluptatibus accusamus, earum doloremque reiciendis molestias dicta asperiores. Sint distinctio voluptate officia dolor, non iusto, expedita consequuntur alias ab magnam aliquam quia rerum exercitationem beatae eum quasi saepe libero ipsum, quae enim numquam iste tenetur laudantium veritatis. Ex quisquam ullam, fugit incidunt amet tempore et aut mollitia autem. Vel quod minus perferendis quaerat officia sed eum commodi modi sapiente quo dicta aut enim temporibus reprehenderit numquam maxime quas, eos iusto? Quasi et ex explicabo consequuntur atque. Iure laborum, deserunt unde ex sapiente quo adipisci vero expedita maiores quis placeat? Exercitationem optio distinctio consequatur excepturi, in id atque possimus sint nihil natus, modi dolore harum quaerat libero ea expedita fugit eos laborum placeat. Distinctio nam officiis id voluptates possimus, odio ut nostrum. Reprehenderit dolor quaerat excepturi nesciunt itaque. Corrupti ipsa ullam error ipsum fuga quod modi laboriosam recusandae sapiente distinctio laudantium provident sed itaque culpa, quo enim harum, officia maxime in officiis reiciendis dicta consequatur non fugiat! Nesciunt, nisi doloremque! Blanditiis corporis quis asperiores sed, repellat accusantium aspernatur eos esse est nesciunt. Corrupti animi sit rerum aliquam aliquid eligendi modi fugit! Amet.
+        </p>
+        <buttton class="btn" id="btn"onclick='hide()'>show/hide</buttton>
+    </div>
+    <script>
+        let para = document.getElementById('para');
+        function hide(){
+            if(para.style.display!='none'){
+                para.style.display = 'none'
+            }else{
+                para.style.display = 'block'
+            }
+        }
+        para.addEventListener('mouseover', function run(){
+            alert('mouse is inside paragraph');
+        } )
+        /*para.addEventListener('mouseout', function run(){
+            alert('mouse is outside paragraph');
+        } )*/
+    </script>
+</body>
+</html>

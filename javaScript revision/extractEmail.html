@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract Email using javaScript</title>
+</head>
+<body>
+    <script type='text/javascript'>
+        // function for get email id
+        function extractEmails ( text ){
+            let newText = text.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/gi);
+            alert((newText))
+        }
+
+        //test
+        extractEmails("my email id is amar@gamil.com");
+    </script>
+</body>
+</html>

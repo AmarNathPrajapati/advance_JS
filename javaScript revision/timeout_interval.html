@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimoOut and setInterval in JS</title>
+</head>
+<body>
+    <h2 id="time">
+
+    </h2>
+    <script>
+        function greet(name){
+            console.log("Good Day "+name);
+        }
+        // In settimeout's parameter we provide only fuction_name , time(ms) after that function invoke and can provide argument of function.
+        let id = setTimeout(greet , 5000 ,'Chandan');
+        clearTimeout(id);//this fuction clear the effect of setTimeOut.
+        let id1 = setInterval(greet,1000,'Chandan');
+        clearInterval(id1);
+        function time(){
+            let time = new Date();
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(time , 1000);
+    </script>
+</body>
+</html>

@@ -7,7 +7,7 @@ for (let i = 0; i < arr.length; i++) {
     const element = arr[i];
     // console.log(element);
 }
-//2. forEach loop
+//2. forEach loop it takes value , index and array as a argument
 arr.forEach((e)=>{
     // console.log(e);
 })
@@ -20,7 +20,7 @@ let newArr = Array.from(shop_name);
 for( i of arr){
     // console.log(i);
 }
-// for in loop
+//5. for in loop
 for(let item in arr ){
     console.log(item);
     console.log(arr[item]);

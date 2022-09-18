@@ -6,4 +6,7 @@ let obj = {
     "programmar":"true"
 }
 console.table(obj);
-// console.clear();
+console.clear();
+let best_row = document.getElementById("best_row");
+console.dir(best_row);
+

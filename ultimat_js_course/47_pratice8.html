@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .nav{
+            background-color: black;
+            color: white;
+            display: flex;
+            list-style: none;
+        }
+        .nav-link{
+            margin: 10px;
+        }
+        .bulb{
+            width: 300px;
+            height: 300px;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+      <!-- solution 1 pratice 8 -->
+      <ul class="nav" id="navbar">
+        <li class="nav-link"><button onclick="alert('You clicked on home')" id="home">Home</button></li>
+        <li class="nav-link"><button onclick="alert('You clicked on about')" id="about">About</button></li>
+        <li class="nav-link"><button onclick="alert('You clicked on contact')" id="contact">Contact Us</button></li>
+        <li class="nav-link"><button onclick="alert('You clicked on service')" id="service">Services</button></li>
+    </ul>
+    <!-- solution 2 practice 8 -->
+    <h3>BookMarks using href</h3>
+    <a href="https://google.com">Google</a>
+    <a href="https://twitter.com">twitter</a>
+    <a href="https://youtube.com">youtube</a>
+    <!-- solution 3 practice 8 -->
+    <h3>BooksMarks using AddEventListners</h3>
+    <button id="google">Google</button>
+    <button id="whatsapp">whatsApp</button>
+    <button id="youtube">youtube</button>
+    <!-- solution 4 pratice 8 -->
+    <div class="data">
+        <img id="imgData" src="" alt="">
+    </div>
+    <div id="bulb" class="bulb">
+
+    </div>
+    <script src="47_practice8.js"></script>
+</body>
+</html>

@@ -1,11 +1,13 @@
 setTimeout(() => {
     console.log("Please don't waste time");
 }, 1000);
+
 try {
     console.log(chandan);
 } catch (tillu) {
    console.log("you are so gorgeous"); 
 }
+
 setTimeout(() => {
     console.log("Start to clip image"); 
 }, 3000);

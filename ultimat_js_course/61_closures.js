@@ -1,17 +1,18 @@
 // closures = function + it's lexical environment
-let a = 5;
-function func1() {
-    let a = 20;
-    console.log("inside func1 another block: ", a);
-    function func2() {
-        return a;
-    }
-    // a = 50; return with reference of memory
-    return func2;// a function return a function that is closure
-}
-console.log("out of func1: ", a);
-let c = func1();
-console.log("The value given by c is: ", c());//here c is with it's lexical environment
+// let a = 5;
+// function func1() {
+//     let a = 20;
+//     console.log("inside func1 another block: ", a);
+//     function func2() {
+//         let a = 10;
+//         return a;
+//     }
+//     // a = 50; return with reference of memory
+//     return func2;// a function return a function that is closure
+// }
+// console.log("out of func1: ", a);
+// let c = func1();
+// console.log("The value given by c is: ", c());//here c is with it's lexical environment
 
 
 // another example

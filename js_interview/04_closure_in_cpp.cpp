@@ -1,24 +1,26 @@
 #include <iostream>
-
+using namespace std;
+// In cpp we can return function but lexical enviroment can't be returned;
 // Function that returns another function
-int add(int x, int y)
+int add(int x, int y, int a)
 {
+    cout<<"This is the a of add function: "<<a<<endl;
     return x + y;
 }
 
 // Function that takes another function as an argument
-int operate(int x, int y, int (*operation)(int, int))
+int operate(int x, int y, int z, int (*operation)(int, int, int))
 {
-    return operation(x, y);
+    return operation(x, y,z);
 }
 
 int main()
 {
     // Define a function pointer to hold the returned function
-    int (*funcPtr)(int, int) = add;
+    int (*funcPtr)(int, int, int) = add;
 
     // Call the returned function through the function pointer
-    std::cout << "Result: " << operate(5, 3, funcPtr) << std::endl;
+    std::cout << "Result: " << operate(5, 3, 4, funcPtr) << std::endl;
 
     return 0;
 }
